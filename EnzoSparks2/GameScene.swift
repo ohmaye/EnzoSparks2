@@ -10,6 +10,9 @@ import SpriteKit
 
 class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
+        /* Install gesture recognizers */
+//        let swipe = UISwipeGestureRecognizer(target: self, action: test)
+        
         /* Setup your scene here */
         let myLabel = SKLabelNode(fontNamed:"Chalkduster")
         myLabel.text = "Hello, World!";
@@ -17,6 +20,10 @@ class GameScene: SKScene {
         myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
         
         self.addChild(myLabel)
+    }
+    
+    func test (  ) {
+        
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
